@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
 //                Top Movers
-                TopMoversView()
+                TopMoversView(viewModel: viewModel)
                 
                 Divider()
                 
 //                All coins view
-                AllCoinsView()
+                AllCoinsView(viewModel: viewModel)
             }
             .navigationTitle("Live Prices")
         }

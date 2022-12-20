@@ -16,6 +16,10 @@
 		7BA1599029518515008DFA1A /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1598F29518515008DFA1A /* TopMoversItemView.swift */; };
 		7BA1599229518974008DFA1A /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1599129518974008DFA1A /* AllCoinsView.swift */; };
 		7BA159942951897E008DFA1A /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA159932951897E008DFA1A /* CoinRowView.swift */; };
+		7BA15998295190DF008DFA1A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA15997295190DF008DFA1A /* HomeViewModel.swift */; };
+		7BD077552951A14A00E3B500 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD077542951A14A00E3B500 /* Coin.swift */; };
+		7BD077582951A90800E3B500 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7BD077572951A90800E3B500 /* Kingfisher */; };
+		7BD0775A2951A9FB00E3B500 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD077592951A9FB00E3B500 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,9 @@
 		7BA1598F29518515008DFA1A /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 		7BA1599129518974008DFA1A /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		7BA159932951897E008DFA1A /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		7BA15997295190DF008DFA1A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7BD077542951A14A00E3B500 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		7BD077592951A9FB00E3B500 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD077582951A90800E3B500 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +108,7 @@
 		7BA15985295180DC008DFA1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7BD077542951A14A00E3B500 /* Coin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +116,7 @@
 		7BA15986295180DE008DFA1A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7BD077592951A9FB00E3B500 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,6 +152,7 @@
 		7BA1598A295182A7008DFA1A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				7BA15997295190DF008DFA1A /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -162,6 +173,9 @@
 			dependencies = (
 			);
 			name = SwiftCryptoCurrency;
+			packageProductDependencies = (
+				7BD077572951A90800E3B500 /* Kingfisher */,
+			);
 			productName = SwiftCryptoCurrency;
 			productReference = 7BA159702951807E008DFA1A /* SwiftCryptoCurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +204,9 @@
 				Base,
 			);
 			mainGroup = 7BA159672951807E008DFA1A;
+			packageReferences = (
+				7BD077562951A90800E3B500 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7BA159712951807E008DFA1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,12 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD077552951A14A00E3B500 /* Coin.swift in Sources */,
 				7BA1598E295184FB008DFA1A /* TopMoversView.swift in Sources */,
 				7BA1599229518974008DFA1A /* AllCoinsView.swift in Sources */,
 				7BA1598C295182CF008DFA1A /* HomeView.swift in Sources */,
+				7BA15998295190DF008DFA1A /* HomeViewModel.swift in Sources */,
 				7BA159762951807E008DFA1A /* ContentView.swift in Sources */,
 				7BA159742951807E008DFA1A /* SwiftCryptoCurrencyApp.swift in Sources */,
 				7BA159942951897E008DFA1A /* CoinRowView.swift in Sources */,
+				7BD0775A2951A9FB00E3B500 /* Double.swift in Sources */,
 				7BA1599029518515008DFA1A /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BD077562951A90800E3B500 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BD077572951A90800E3B500 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BD077562951A90800E3B500 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BA159682951807E008DFA1A /* Project object */;
 }
