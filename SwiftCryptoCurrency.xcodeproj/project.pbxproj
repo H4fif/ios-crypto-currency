@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1022BE297B7D07004FADBC /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7B1022BD297B7D07004FADBC /* Readme.md */; };
 		7BA159742951807E008DFA1A /* SwiftCryptoCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA159732951807E008DFA1A /* SwiftCryptoCurrencyApp.swift */; };
 		7BA159762951807E008DFA1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA159752951807E008DFA1A /* ContentView.swift */; };
 		7BA159782951807F008DFA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA159772951807F008DFA1A /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B1022BD297B7D07004FADBC /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		7BA159702951807E008DFA1A /* SwiftCryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA159732951807E008DFA1A /* SwiftCryptoCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCryptoCurrencyApp.swift; sourceTree = "<group>"; };
 		7BA159752951807E008DFA1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		7BA159672951807E008DFA1A = {
 			isa = PBXGroup;
 			children = (
+				7B1022BD297B7D07004FADBC /* Readme.md */,
 				7BA159722951807E008DFA1A /* SwiftCryptoCurrency */,
 				7BA159712951807E008DFA1A /* Products */,
 			);
@@ -223,6 +226,7 @@
 			files = (
 				7BA1597B2951807F008DFA1A /* Preview Assets.xcassets in Resources */,
 				7BA159782951807F008DFA1A /* Assets.xcassets in Resources */,
+				7B1022BE297B7D07004FADBC /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
